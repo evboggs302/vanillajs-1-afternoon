@@ -5,7 +5,7 @@ let arr = [];
 function play(clickedId) {
   const playerSpan = document.getElementById("player");
   const clickedElement = document.getElementById(clickedId);
-  if (clcickedElement.innerText) {
+  if (clickedElement.innerText) {
     return;
   }
   if (playerSpan.innerText === "X") {
@@ -81,7 +81,10 @@ function play(clickedId) {
   }
 }
 
-// function reset() {
-//     const resetButton = document.getElementById('reset');
-
-// }
+function reset() {
+  const resetArr = document.getElementsByTagName("td");
+  for (let i = 0; i < resetArr.length; i++) {
+    resetArr[i].innerText = "";
+  }
+  return;
+}

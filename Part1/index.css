@@ -37,8 +37,8 @@ table {
 
 .button {
   height: 50px;
-  width: 100px;
+  width: 500px;
   text-align: center;
   font-size: 2em;
-  margin-left: 45%;
+  align-items: center;
 }
