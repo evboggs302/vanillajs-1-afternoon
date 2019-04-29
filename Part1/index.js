@@ -26,55 +26,59 @@ function play(clickedId) {
   const low2 = arr[7];
   const low3 = arr[8];
 
-  if(top1 !== undefined && top1 === top2 && top1 === top3)
-      alert(`${top1} wins!`);
-      return;
+  if (top1 !== undefined && top1 === top2 && top1 === top3) {
+    alert(`${top1} wins!`);
+    return;
   }
 
-  if(mid1 !== undefined && mid1 === mid2 && mid1 === mid3){
-      alert(`${mid1} wins!`)
-      return;
+  if (mid1 !== undefined && mid1 === mid2 && mid1 === mid3) {
+    alert(`${mid1} wins!`);
+    return;
   }
 
-  // if(low1 !== undefined && low1 === low2 && low2 === low3){
-  //     alert(`${low1} wins!`)
-  //     return;
-  // }
+  if (low1 !== undefined && low1 === low2 && low2 === low3) {
+    alert(`${low1} wins!`);
+    return;
+  }
 
-  // if(top1 !== undefined && top1 === mid1 && mid1 === low1){
-  //     alert(`${top1} wins!`)
-  //     return;
-  // }
+  if (top1 !== undefined && top1 === mid1 && mid1 === low1) {
+    alert(`${top1} wins!`);
+    return;
+  }
 
-  // if(top2 !== undefined && top2 === mid2 && mid2 === low2){
-  //     alert(`${top2} wins!`)
-  //     return;
-  // }
+  if (top2 !== undefined && top2 === mid2 && mid2 === low2) {
+    alert(`${top2} wins!`);
+    return;
+  }
 
-  // if(top3 !== undefined && top3 === mid3 && mid3 === low3){
-  //     alert(`${top3} wins!`)
-  //     return;
-  // }
+  if (top3 !== undefined && top3 === mid3 && mid3 === low3) {
+    alert(`${top3} wins!`);
+    return;
+  }
 
-  // if(top1 !== undefined && top1 === mid2 && mid2 === low3){
-  //     alert(`${top1} wins!`)
-  //     return;
-  // }
+  if (top1 !== undefined && top1 === mid2 && mid2 === low3) {
+    alert(`${top1} wins!`);
+    return;
+  }
 
-  // if(top3 !== undefined && top3 === mid2 && mid2 === low1){
-  //     alert(`${top3} wins!`);
-  //     return;
-  // }
+  if (top3 !== undefined && top3 === mid2 && mid2 === low1) {
+    alert(`${top3} wins!`);
+    return;
+  }
 
-  // let full = true;
+  let full = true;
 
-  // for(let i=0; i<arr.length; i++){
-  //     if(arr[i] === undefined){
-  //         full = false;
-  //     }else if(arr[i] !== undefined){
-  //         full === true;
-  //     }else {
-  //         alert("Cat's game. It's a tie!");
-  //     }
-  // }
+  for (let i = 0; i <= 8; i++) {
+    if (arr[i] === undefined) {
+      full = false;
+    }
+  }
+  if (full === true) {
+    alert("Cat's game. It's a tie!");
+  }
 }
+
+// function reset() {
+//     const resetButton = document.getElementById('reset');
+
+// }
