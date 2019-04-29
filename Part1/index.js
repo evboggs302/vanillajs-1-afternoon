@@ -15,7 +15,7 @@ function play(clickedId) {
   } else {
     playerSpan.innerText = "X";
     clickedElement.innerText = "O";
-    arr[clickedID] = "O";
+    arr[clickedId] = "O";
   }
   console.log(arr);
 
@@ -86,5 +86,6 @@ function reset() {
   for (let i = 0; i < resetArr.length; i++) {
     resetArr[i].innerText = "";
   }
+  arr = [];
   return;
 }
